@@ -1,4 +1,8 @@
-<div class="header">
+<div class="header"
+  [ngClass]="{
+    'white-theme-background-color': !(darkMode() === true)
+  }"
+>
   <div class="content">
     <div class="photo-container">
       <img class="photo" src="assets/images/tutor.jpg" alt="Изображение преподавателя">

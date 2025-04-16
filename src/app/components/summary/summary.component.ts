@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { TUI_DARK_MODE, TuiIcon } from '@taiga-ui/core';
+import { TuiIcon, TUI_DARK_MODE } from '@taiga-ui/core';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-summary',
   imports: [
     CommonModule,
     TuiIcon,
   ],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss',
+  templateUrl: './summary.component.html',
+  styleUrl: './summary.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MenuComponent {
+export class SummaryComponent {
   protected readonly darkMode = inject(TUI_DARK_MODE);
 }

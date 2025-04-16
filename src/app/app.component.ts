@@ -4,6 +4,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { WA_LOCAL_STORAGE, WA_WINDOW } from '@ng-web-apis/common';
 import { TUI_DARK_MODE, TUI_DARK_MODE_KEY, TuiButton, TuiRoot } from '@taiga-ui/core';
 import { MenuComponent } from './components/menu/menu.component';
+import { SummaryComponent } from './components/summary/summary.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { MenuComponent } from './components/menu/menu.component';
 
     HeaderComponent,
     MenuComponent,
+    SummaryComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
