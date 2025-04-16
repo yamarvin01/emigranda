@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.content {
+  text-align: right;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+}
+
+.theme-icon {
+  cursor: pointer;
+}

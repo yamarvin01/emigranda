@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 560px;
+  grid-template-areas:
+     "photo description"
+  ;
+  gap: 0 40px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+}
+
+.photo-container {
+  grid-area: photo;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: fill !important;
+}
+
+.photo {
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+.description-container {
+  grid-area: description;
+}
