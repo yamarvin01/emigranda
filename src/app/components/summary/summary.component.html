@@ -1,6 +1,6 @@
 <div class="summary"
   [ngClass]="{
-    'white-theme-background-color': !(darkMode() === true)
+    'light-theme-background-color__base-alt': !(darkMode() === true)
   }"
 >
 
@@ -38,11 +38,22 @@
         </svg>
       </div> -->
     </div>
-
-    <div>
-
+    <div class="reviews">
+      <ng-container *ngFor="let review of reviews">
+        <ng-container *ngTemplateOutlet="reviewTemplate; context: { $implicit: review }"></ng-container>
+      </ng-container>
     </div>
-
   </div>
-
 </div>
+
+<ng-template #reviewTemplate let-review>
+  <div class="review"
+    [ngClass]="{
+      'light-theme-background-color__white': !(darkMode() === true)
+    }"
+  >
+    <h1 class="review__name">{{ review.name }}</h1>
+    <h2 class="review__title">{{ review.title }}</h2>
+    <h3 class="review__text">{{ review.text }}</h3>
+  </div>
+</ng-template>
