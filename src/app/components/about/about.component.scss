@@ -52,6 +52,8 @@
 
   &__photo {
     width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -85,5 +87,20 @@
 }
 
 @media screen and (max-width: 700px) {
+  .content {
+    gap: 0;
+  }
 
+  .paragraph {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paragraph:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .photo-container {
+    padding: 20px 0;
+  }
 }
