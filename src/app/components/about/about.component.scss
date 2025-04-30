@@ -1,5 +1,4 @@
 .about {
-  border: 2px red dashed;
   display: flex;
   justify-content: center;
   padding: 40px 20px 80px;
@@ -7,7 +6,6 @@
 }
 
 .content {
-  border: 1px red solid;
   display: flex;
   flex-direction: column;
   gap: 75px;
@@ -36,12 +34,16 @@
   &__subheading {
     font: var(--tui-font-text-m);
     color: var(--tui-text-secondary);
-    padding-bottom: 28px;
+    padding-bottom: 56px;
   }
 
   &__text {
     font: var(--tui-font-text-l);
     padding-top: 28px;
+  }
+
+  &__text:first-child {
+    padding-top: 0;
   }
 }
 
@@ -56,6 +58,28 @@
 @media screen and (max-width: 950px) {
   .about {
     padding: 20px 20px 40px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .text-container {
+    width: 100%;
+
+    &__heading {
+      padding-bottom: 8px;
+    }
+
+    &__subheading {
+      font: var(--tui-font-text-s);
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      font: var(--tui-font-text-m);
+      padding-top: 20px;
+    }
   }
 
 }
