@@ -1,0 +1,33 @@
+<section class="results">
+  <div class="content">
+    <ng-container *ngFor="let subContent of data">
+      <div class="sub-content">
+        <h2 class="heading">{{ subContent.heading }}</h2>
+        <h2 class="sub-heading" *ngIf="subContent.subHeading">{{ subContent.subHeading }}</h2>
+        <div class="items-container">
+          <ng-container *ngFor="let item of subContent.items">
+            <ng-container
+              *ngTemplateOutlet="
+                itemTemplate;
+                context: {
+                  year: item.year,
+                  text: item.text,
+                }
+              "
+            ></ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>
+
+<ng-template #itemTemplate let-year="year" let-text="text">
+  <div class="item">
+    <div class="wrapper">
+      <p class="wrapper__symbol">{{ year }}</p>
+      <p class="wrapper__title">{{ year }}</p>
+      <p class="wrapper__text">{{ text }}</p>
+    </div>
+  </div>
+</ng-template>
