@@ -4,11 +4,7 @@ import { TuiIcon, TuiLink, TUI_DARK_MODE } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-header',
-  imports: [
-    CommonModule,
-    TuiLink,
-    TuiIcon,
-  ],
+  imports: [CommonModule, TuiLink, TuiIcon],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

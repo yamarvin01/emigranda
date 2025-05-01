@@ -1,20 +1,25 @@
-<section class="header"
+<section
+  class="header"
   [ngClass]="{
-    'white-theme-background-color': !(darkMode() === true)
+    'white-theme-background-color': !(darkMode() === true),
   }"
 >
   <div class="content">
     <div class="photo-container">
-      <img class="photo" src="assets/images/tutor.jpg" alt="Изображение преподавателя">
+      <img class="photo" src="assets/images/tutor.jpg" alt="Изображение преподавателя" />
     </div>
     <div class="description-container">
       <h1 class="title">Эффективная подготовка к экзаменам по немецкому языку</h1>
       <p class="subtitle">с Мариной Филипцовой</p>
-      <p class="text">Мини-группы по подготовке к экзаменам по русскому языку и литературе. Только для 9, 10 и 11 классов</p>
+      <p class="text">
+        Мини-группы по подготовке к экзаменам по русскому языку и литературе. Только для 9, 10 и 11 классов
+      </p>
       <p class="text">Стабильно, эффективно, надёжно, комфортно, в хорошей компании единомышленников</p>
-      <p class="text">Наша цель — знания, и мы их старательно укрепляем, поэтому сдадим экзамены при любых обстоятельствах</p>
+      <p class="text">
+        Наша цель — знания, и мы их старательно укрепляем, поэтому сдадим экзамены при любых обстоятельствах
+      </p>
       <div class="link-container">
-        <a class=link tuiLink [style.color]="'var(--tui-text-positive)'">Оставить заявку на учёбу</a>
+        <a class="link" tuiLink [style.color]="'var(--tui-text-positive)'">Оставить заявку на учёбу</a>
         <tui-icon class="icon" icon="@tui.move-right" [style.color]="'var(--tui-text-positive)'"></tui-icon>
       </div>
     </div>

@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./components/header/header.component";
+import { HeaderComponent } from './components/header/header.component';
 import { WA_LOCAL_STORAGE, WA_WINDOW } from '@ng-web-apis/common';
 import { TUI_DARK_MODE, TUI_DARK_MODE_KEY, TuiButton, TuiRoot } from '@taiga-ui/core';
 import { MenuComponent } from './components/menu/menu.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { AboutComponent } from './components/about/about.component';
+import { ResultsComponent } from './components/results/results.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
     MenuComponent,
     SummaryComponent,
     AboutComponent,
+    ResultsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
