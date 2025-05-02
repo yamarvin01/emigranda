@@ -5,6 +5,8 @@
 .header {
   display: flex;
   justify-content: center;
+  min-width: 320px;
+  box-sizing: border-box;
   padding: 0 20px 0;
 }
 
@@ -18,7 +20,7 @@
   gap: 0 40px;
   width: 100%;
   max-width: 1200px;
-  min-width: 320px;
+  box-sizing: border-box;
 }
 
 .photo-container {
@@ -36,6 +38,7 @@
 
 .description-container {
   grid-area: description;
+  box-sizing: border-box;
 }
 
 .title {
@@ -85,7 +88,7 @@
   }
 
   .title {
-    font-size: 36px;
+    font: var(--tui-font-heading-3);
     padding-bottom: 12px;
   }
 
@@ -108,10 +111,6 @@
   }
 }
 
-@media screen and (max-width: 950px) {
-
-}
-
 @media screen and (max-width: 700px) {
   .content {
     display: grid;
@@ -128,7 +127,6 @@
   }
 
   .title {
-    font-size: 28px;
     padding: 0;
     padding: 12px 0;
   }

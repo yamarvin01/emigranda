@@ -1,0 +1,126 @@
+.price {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 80px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.title {
+  font: var(--tui-font-heading-2);
+  text-align: center;
+  padding: 80px 0 50px;
+}
+
+.text {
+  font: var(--tui-font-heading-5);
+  text-align: center;
+  font-weight: 300;
+  max-width: 500px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--tui-shadow-medium);
+  border-radius: 10px;
+  padding: 30px 30px 50px;
+
+  &__title {
+    font: var(--tui-font-heading-5);
+    text-align: center;
+  }
+
+  &__sub-title {
+    font: var(--tui-font-text-m);
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &__text {
+    font: var(--tui-font-heading-2);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font: var(--tui-font-heading-3);
+    text-align: center;
+    padding: 40px 0 40px;
+  }
+
+  .text {
+    font: var(--tui-font-heading-6);
+    font-weight: 300;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+
+  .item {
+
+    &__text {
+      padding: 10px 0 40px;
+      margin-top: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .price {
+    padding: 0 20px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font: var(--tui-font-heading-4);
+    padding: 20px 0 20px;
+  }
+
+  .text {
+    font: var(--tui-font-text-l);
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    gap: 20px;
+  }
+
+  .item {
+    padding: 20px 20px 40px;
+
+    &__title {
+      font: var(--tui-font-heading-6);
+    }
+
+    &__text {
+      font: var(--tui-font-heading-4);
+    }
+  }
+}
