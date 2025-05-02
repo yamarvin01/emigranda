@@ -1,9 +1,9 @@
-<section class="summary"
+<section
+  class="summary"
   [ngClass]="{
-    'light-theme-background-color__base-alt': !(darkMode() === true)
+    'light-theme-background-color__base-alt': !(darkMode() === true),
   }"
 >
-
   <div class="content">
     <div class="rating">
       <div class="rating__icons">
@@ -47,9 +47,10 @@
 </section>
 
 <ng-template #reviewTemplate let-review>
-  <div class="review"
+  <div
+    class="review"
     [ngClass]="{
-      'light-theme-background-color__white': !(darkMode() === true)
+      'light-theme-background-color__white': !(darkMode() === true),
     }"
   >
     <h1 class="review__name">{{ review.name }}</h1>

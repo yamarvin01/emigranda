@@ -1,0 +1,31 @@
+<section class="price">
+  <div class="content">
+    <h2 class="title">Цены</h2>
+    <p class="text">
+      Индивидуальные занятия, мини-группы и канал в Телеграме для самостоятельной подготовки. Все занятия проходят
+      онлайн. Неважно, где вы живёте; учиться у меня смогут все.
+    </p>
+    <div class="container">
+      <ng-container *ngFor="let item of items">
+        <ng-container
+          *ngTemplateOutlet="
+            itemTemplate;
+            context: {
+              $implicit: item,
+            }
+          "
+        >
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<ng-template #itemTemplate let-item>
+  <div class="item">
+    <h3 class="item__title">{{ item.title }}</h3>
+    <h4 class="item__sub-title">{{ item.subTitle }}</h4>
+    <p class="item__text">{{ item.text }}</p>
+    <button class="item__btn" tuiButton appearance="accent">Оставить заявку на учебу</button>
+  </div>
+</ng-template>

@@ -7,6 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResultsComponent } from './components/results/results.component';
+import { PriceComponent } from './components/price/price.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { ResultsComponent } from './components/results/results.component';
     SummaryComponent,
     AboutComponent,
     ResultsComponent,
+    PriceComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

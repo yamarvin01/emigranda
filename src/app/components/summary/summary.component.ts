@@ -4,10 +4,7 @@ import { TuiIcon, TUI_DARK_MODE } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-summary',
-  imports: [
-    CommonModule,
-    TuiIcon,
-  ],
+  imports: [CommonModule, TuiIcon],
   templateUrl: './summary.component.html',
   styleUrl: './summary.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -15,7 +12,7 @@ import { TuiIcon, TUI_DARK_MODE } from '@taiga-ui/core';
 export class SummaryComponent {
   protected readonly darkMode = inject(TUI_DARK_MODE);
 
-  public reviews: { name: string, title: string, text: string }[] = [
+  public reviews: { name: string; title: string; text: string }[] = [
     {
       name: 'Наталия',
       title: 'Русский язык • ЕГЭ по русскому языку',
