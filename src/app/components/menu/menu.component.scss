@@ -1,13 +1,13 @@
+.white-theme-background-color {
+  background-color: var(--tui-background-base-alt);
+}
+
 .menu {
   display: flex;
   justify-content: center;
   padding: 50px 20px;
   min-width: 320px;
   box-sizing: border-box;
-}
-
-.white-theme-background-color {
-  background-color: var(--tui-background-base-alt);
 }
 
 .content {
