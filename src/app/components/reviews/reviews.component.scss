@@ -1,0 +1,140 @@
+:host::ng-deep {
+  .t-item {
+    padding: 0;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.content  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font: var(--tui-font-heading-2);
+  padding-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel-container {
+  max-width: 1200px;
+  width: 100%;
+  overflow: auto;
+  justify-self: center;
+
+  .carousel {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      font: var(--tui-font-heading-5);
+      padding-bottom: 36px;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    &__icons {
+      text-align: center;
+
+      &-icon {
+        font-size: 36px;
+        color: var(--tui-text-positive);
+      }
+    }
+
+    &__author {
+      font: var(--tui-font-text-l);
+      font-weight: 600;
+      text-align: center;
+      padding: 14px 0 5px;
+    }
+
+    &__subject {
+      font: var(--tui-font-text-m);
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}
+
+.link-container {
+  font: var(--tui-font-text-m);
+  padding: 30px 0;
+
+  .link {
+    text-decoration: none;
+    color: var(--tui-text-positive);
+  }
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  width: 100%;
+  padding: 40px 0 0;
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .title {
+    font: var(--tui-font-heading-3);
+    font-weight: 600;
+  }
+
+  .carousel-container {
+    .carousel {
+      &__text {
+        font: var(--tui-font-text-l);
+        padding-bottom: 30px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .link-container {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font: var(--tui-font-heading-4);
+    font-weight: 600;
+  }
+
+  .carousel-container {
+    .carousel {
+      &__text {
+        font: var(--tui-font-text-m);
+        font-weight: 300;
+      }
+    }
+  }
+}

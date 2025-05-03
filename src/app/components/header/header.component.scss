@@ -78,7 +78,7 @@
   margin: 0 .5rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 950px) {
   .content {
     gap: 0 20px;
   }
@@ -127,6 +127,7 @@
   }
 
   .title {
+    font: var(--tui-font-heading-4);
     padding: 0;
     padding: 12px 0;
   }

@@ -1,0 +1,48 @@
+.white-theme-background-color {
+  background-color: #000;
+}
+.wite-theme-color {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  min-width: 320px;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text {
+  font: var(--tui-font-heading-6);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    padding: 60px 20px;
+  }
+
+  .text {
+    font: var(--tui-font-text-l);
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .text {
+    font: var(--tui-font-text-l);
+    font-weight: 400;
+  }
+}

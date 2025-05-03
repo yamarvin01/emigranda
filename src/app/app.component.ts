@@ -8,6 +8,10 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResultsComponent } from './components/results/results.component';
 import { PriceComponent } from './components/price/price.component';
+import { TimeComponent } from './components/time/time.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +26,10 @@ import { PriceComponent } from './components/price/price.component';
     AboutComponent,
     ResultsComponent,
     PriceComponent,
+    TimeComponent,
+    ReviewsComponent,
+    ContactsComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

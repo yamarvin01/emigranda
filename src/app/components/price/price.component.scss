@@ -64,32 +64,6 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .title {
-    font: var(--tui-font-heading-3);
-    text-align: center;
-    padding: 40px 0 40px;
-  }
-
-  .text {
-    font: var(--tui-font-heading-6);
-    font-weight: 300;
-    padding-bottom: 40px;
-  }
-
-  .container {
-    gap: 30px;
-  }
-
-  .item {
-
-    &__text {
-      padding: 10px 0 40px;
-      margin-top: auto;
-    }
-  }
-}
-
 @media screen and (max-width: 950px) {
   .price {
     padding: 0 20px 20px;
