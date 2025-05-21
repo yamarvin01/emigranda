@@ -64,5 +64,15 @@ export class ReviewsComponent {
     'assets/reviews/photo_2025-05-21_16-38-33.jpg',
     'assets/reviews/photo_2025-05-21_16-44-22.jpg',
     'assets/reviews/photo_2025-05-21_16-44-22 (2).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-17 (2).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-17 (3).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-17 (4).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-17.jpg',
+    'assets/reviews/photo_2025-05-21_20-13-18 (2).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-18 (3).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-18 (4).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-18.jpg',
+    'assets/reviews/photo_2025-05-21_20-13-19 (2).jpg',
+    'assets/reviews/photo_2025-05-21_20-13-19.jpg',
   ];
 }
