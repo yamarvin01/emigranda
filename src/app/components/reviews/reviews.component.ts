@@ -51,28 +51,17 @@ export class ReviewsComponent {
   ];
 
   public images: string[] = [
-    'assets/reviews/2025-05-10.png',
     'assets/reviews/2025-05-10 (2).png',
     'assets/reviews/2025-05-10 (3).png',
     'assets/reviews/2025-05-10 (4).png',
     'assets/reviews/2025-05-10 (5).png',
+    'assets/reviews/2025-05-10.png',
     'assets/reviews/photo_2025-04-17 00.26.40.jpeg',
     'assets/reviews/photo_2025-04-17 00.26.44.jpeg',
     'assets/reviews/photo_2025-04-17 00.26.47.jpeg',
-    'assets/reviews/photo_2025-04-17 00.26.51.jpeg',
-    'assets/reviews/photo_2025-04-17 00.26.54.jpeg',
+    'assets/reviews/photo_2025-04-17 00.26.54.jpg',
     'assets/reviews/photo_2025-05-21_16-38-33.jpg',
-    'assets/reviews/photo_2025-05-21_16-44-22.jpg',
     'assets/reviews/photo_2025-05-21_16-44-22 (2).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-17 (2).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-17 (3).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-17 (4).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-17.jpg',
-    'assets/reviews/photo_2025-05-21_20-13-18 (2).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-18 (3).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-18 (4).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-18.jpg',
-    'assets/reviews/photo_2025-05-21_20-13-19 (2).jpg',
-    'assets/reviews/photo_2025-05-21_20-13-19.jpg',
+    'assets/reviews/photo_2025-05-21_16-44-22.jpg',
   ];
 }
