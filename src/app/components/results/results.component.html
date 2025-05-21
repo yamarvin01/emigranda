@@ -10,7 +10,6 @@
               *ngTemplateOutlet="
                 itemTemplate;
                 context: {
-                  year: item.year,
                   text: item.text,
                 }
               "
@@ -25,8 +24,6 @@
 <ng-template #itemTemplate let-year="year" let-text="text">
   <div class="item">
     <div class="wrapper">
-      <p class="wrapper__symbol">{{ year }}</p>
-      <p class="wrapper__title">{{ year }}</p>
       <p class="wrapper__text">{{ text }}</p>
     </div>
   </div>
