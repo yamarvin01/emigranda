@@ -48,6 +48,10 @@
       line-height: 30px;
     }
   }
+
+  &__link:hover {
+    opacity: .8;
+  }
 }
 
 .reviews {

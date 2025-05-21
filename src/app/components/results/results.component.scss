@@ -36,32 +36,9 @@
 .item {
   position: relative;
   width: 100%;
-  min-height: 175px;
 }
 
 .wrapper {
-  padding-left: 110px;
-
-  &__symbol {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    font-size: 200px;
-    line-height: 150px;
-    font-weight: 700;
-    opacity: .1;
-  }
-
-  &__title {
-    z-index: 2;
-    position: relative;
-    font: var(--tui-font-heading-5);
-    font-weight: 700;
-    padding-top: 65px;
-    padding-bottom: 10px;
-  }
 
   &__text {
     font: var(--tui-font-text-m);
@@ -90,19 +67,6 @@
   }
 
   .wrapper {
-    padding-left: 60px;
-
-    &__symbol {
-      font-size: 100px;
-      line-height: 85px;
-    }
-
-    &__title {
-      font: var(--tui-font-heading-6);
-      padding-top: 30px;
-      padding-bottom: 10px;
-    }
-
     &__text {
       font: var(--tui-font-text-m);
     }
