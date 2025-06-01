@@ -31,9 +31,13 @@
     padding-bottom: 8px;
   }
 
-  &__text {
+  &__paragraph {
     font: var(--tui-font-text-l);
     padding-top: 28px;
+  }
+
+  &__text {
+    font: var(--tui-font-text-l);
   }
 
   &__text:first-child {

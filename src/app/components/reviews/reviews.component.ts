@@ -63,5 +63,6 @@ export class ReviewsComponent {
     'assets/reviews/photo_2025-05-21_16-38-33.jpg',
     'assets/reviews/photo_2025-05-21_16-44-22 (2).jpg',
     'assets/reviews/photo_2025-05-21_16-44-22.jpg',
+    'assets/reviews/photo_2025-05-30_21-46-16.jpg',
   ];
 }
