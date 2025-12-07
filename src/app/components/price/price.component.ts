@@ -12,19 +12,19 @@ import { TuiButton } from '@taiga-ui/core';
 export class PriceComponent {
   public items = [
     {
-      title: 'Занятие в мини-группе (от 4х человек)',
-      subTitle: '70 минут',
-      text: '10€/ 1000₽',
+      title: 'Психологическая консультация',
+      priceText: '50€/ 5 000₽',
+      btnText: 'Оставить заявку',
     },
     {
-      title: 'Занятие в мини-группе (до 3х человек)',
-      subTitle: '70 минут',
-      text: '15€/ 1500₽',
+      title: 'Персональный урок немецкого',
+      priceText: '50€/ 5 000₽',
+      btnText: 'Оставить заявку',
     },
     {
-      title: 'Индивидуальная консультация',
-      subTitle: '70 минут',
-      text: '30€/ 3000₽',
+      title: 'Курс немецкого языка (все уровни)',
+      priceText: '250€/ 25 000₽',
+      btnText: 'Оставить заявку',
     },
   ];
 
