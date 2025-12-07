@@ -1,37 +1,6 @@
 <div class="reviews">
   <div class="content" tuiCarouselButtons>
     <h2 class="title">Что говорят ученики</h2>
-
-    <!-- <div class="reviews-container">
-      <button iconStart="@tui.chevron-left" tuiIconButton type="button" (click)="carousel.prev()">Previous</button>
-      <div class="carousel-container">
-        <tui-carousel class="carousel" #carousel [(index)]="index">
-          <ng-container *ngFor="let item of items">
-            <div class="carousel__wrapper" *tuiItem>
-              <div class="carousel__item">
-                <p class="carousel__text">{{ item.text }}</p>
-                <div class="carousel__icons">
-                  <tui-icon class="carousel__icons-icon" icon="@tui.star"></tui-icon>
-                  <tui-icon class="carousel__icons-icon" icon="@tui.star"></tui-icon>
-                  <tui-icon class="carousel__icons-icon" icon="@tui.star"></tui-icon>
-                  <tui-icon class="carousel__icons-icon" icon="@tui.star"></tui-icon>
-                  <tui-icon class="carousel__icons-icon" icon="@tui.star"></tui-icon>
-                </div>
-                <p class="carousel__author">{{ item.author }}</p>
-                <p class="carousel__subject">{{ item.subject }}</p>
-              </div>
-            </div>
-          </ng-container>
-        </tui-carousel>
-      </div>
-      <button iconStart="@tui.chevron-right" tuiIconButton type="button" (click)="carousel.next()">Next</button>
-    </div> -->
-
-    <!-- <p class="link-container">
-      Верификация отзывов на <span><a class="link" href="">Profi.ru</a></span>
-    </p>
-    <tui-pagination size="s" class="pagination" [length]="items.length" [(index)]="index" /> -->
-
     <div class="img-container">
       <ng-container *ngFor="let src of images">
         <div class="img-container__wrapper">
