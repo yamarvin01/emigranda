@@ -2,50 +2,32 @@
   <div class="content">
     <div class="paragraph">
       <div class="text-container">
-        <h2 class="text-container__heading">Формат моих курсов</h2>
+        <h2 class="text-container__heading">{{ 'about.title.first' | translate }}</h2>
         <div>
-          <p class="text-container__paragraph">
-            Мои курсы подходят тем, кто хочет продвинуться в немецком, подготовиться к экзаменам, освоить рабочий язык,
-            адаптироваться в Германии, повысить уверенность и выстроить стабильную систему жизни и заработка. Кроме
-            языковых направлений я также веду программы для репетиторов, преподавателей и предпринимателей - помогаю
-            создавать частную практику, налаживать работу предпринимательского направления, структурировать услуги,
-            повышать доход и выстраивать профессиональный путь. Отдельное направление - это психологические и личные
-            запросы: стресс, неуверенность, прокрастинация, денежные и профессиональные блоки, поиск опоры, решение
-            личных и рабочих задач. За последние годы мои выпускники успешно сдавали экзамены с первой попытки,
-            поступали в университеты, находили работу, запускали свои проекты и выстраивали стабильный доход
-          </p>
+          <p class="text-container__paragraph">{{ 'about.paragraph.first' | translate }}</p>
         </div>
       </div>
       <div class="photo-container">
         <img class="photo-container__photo" src="assets/images/about-2.jpg" alt="Изображение преподавателя" />
       </div>
     </div>
-
     <div class="paragraph">
       <div class="photo-container">
         <img class="photo-container__photo" src="assets/images/about-3.jpg" alt="Изображение преподавателя" />
       </div>
       <div class="text-container">
-        <h2 class="text-container__heading">Формат ReTreat</h2>
+        <h2 class="text-container__heading">{{ 'about.title.second' | translate }}</h2>
+        <p class="text-container__paragraph">{{ 'about.paragraph.second' | translate }}</p>
         <p class="text-container__paragraph">
-          ReTreat — мой самый результативный формат: 10 часов работы в мини-группе и индивидуальные онлайн-сессии,
-          которые дают оптимальный баланс личной стратегии и живой практики. К каждому курсу идут материалы,
-          адаптированные под цели участника — будь то язык, профессиональные задачи, личная эффективность или развитие
-          собственного дела. Формат работает особенно эффективно благодаря авторскому подходу, который сочетает в себе
-          коучинг, психотерапевтические техники и другие профессиональные методики. Атмосфера остаётся комфортной и
-          мотивирующей, а сами процессы — лёгкими, глубокими и ориентированными на конкретный результат: экзамены,
-          работа, немецкий для жизни, запуск частной практики, улучшение дохода или решение внутренних запросов
-        </p>
-        <p class="text-container__paragraph">
-          Если тебе это откликается — напиши мне
+          {{ 'about.text.first' | translate }}
           <a
             tuiLink
             [style.color]="'var(--tui-text-positive)'"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfNk1Qydnrs_aye30rSgGGC2W-2dzjyiXHkofJ3xAl6HW-pkA/viewform?usp=header"
             target="_blank"
-            >ОСТАВИТЬ ЗАЯВКУ НА ОБУЧЕНИЕ
+            >{{ 'about.request.study' | translate }}
           </a>
-          Я очень рада новым встречам ✨
+          {{ 'about.text.second' | translate }}
         </p>
       </div>
     </div>

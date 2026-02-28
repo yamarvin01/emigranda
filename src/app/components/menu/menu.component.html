@@ -5,6 +5,11 @@
   }"
 >
   <div class="content">
+    <div class="language">
+      <button tuiButton [size]="'xs'" (click)="useLanguage('en')">English</button>
+      <button tuiButton [size]="'xs'" (click)="useLanguage('de')">Deutsch</button>
+      <button tuiButton [size]="'xs'" (click)="useLanguage('ru')">Русский</button>
+    </div>
     <tui-icon (click)="darkMode.set(!darkMode())" class="theme-icon" icon="@tui.moon" />
   </div>
 </section>

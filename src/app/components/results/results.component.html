@@ -2,15 +2,14 @@
   <div class="content">
     <ng-container *ngFor="let subContent of data">
       <div class="sub-content">
-        <h2 class="heading">{{ subContent.heading }}</h2>
-        <h2 class="sub-heading" *ngIf="subContent.subHeading">{{ subContent.subHeading }}</h2>
+        <h2 class="heading">{{ subContent.heading | translate }}</h2>
         <div class="items-container">
           <ng-container *ngFor="let item of subContent.items">
             <ng-container
               *ngTemplateOutlet="
                 itemTemplate;
                 context: {
-                  text: item.text,
+                  text: item.text | translate,
                 }
               "
             ></ng-container>

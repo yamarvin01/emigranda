@@ -19,13 +19,6 @@
   text-align: center;
 }
 
-.sub-heading {
-  font: var(--tui-font-heading-5);
-  font-weight: 400;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 .items-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
