@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-results',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './results.component.html',
   styleUrl: './results.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -11,34 +12,25 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ResultsComponent {
   public data = [
     {
-      heading: 'РЕЗУЛЬТАТЫ НАШИХ УЧЕНИКОВ',
-      subHeading: null,
+      heading: 'results.title',
       items: [
         {
-          text: 'ИНДИВИДУАЛЬНАЯ ПОДГОТОВКА К ЭКЗАМЕНАМ  Start Deutsch/ telc Deutsch, Zertifikat Deutsch - 100% результат',
+          text: 'results.paragraph.first',
         },
         {
-          text: 'ИНТЕГРАЦИОННЫЕ КУРСЫ - за 3 последних года сертификат DTZ с результатом B1 получило 80% учеников',
+          text: 'results.paragraph.second',
         },
         {
-          text: 'Наши ученики легко поступают в вузы Германии и Австрии, успешно проходят собеседования, находят работу и достигают своих целей',
+          text: 'results.paragraph.third',
         },
         {
-          text: `Трудоустройство в Германии
-            Участница пришла с запросом: «Нужен язык для работы, но я боюсь говорить».
-            За курс разобрали рабочие ситуации, подготовили Bewerbungen и прошли через несколько собеседований в безопасном формате.
-            Результат: первое рабочее место в Германии + уверенное использование языка на работе`,
+          text: 'results.paragraph.fourth',
         },
         {
-          text: `Развитие предпринимательского направления
-            Предприниматель с выгоранием, низкой мотивацией и хаотичными процессами.
-            На курсе мы структурировали услуги, настроили финансовую опору и убрали внутренние блоки.
-            Результат: рост дохода на 30–50%, настройка системы работы, возвращение энергии и фокус`,
+          text: 'results.paragraph.fifth',
         },
         {
-          text: `Участница пришла с запросом «не могу начать ничего — много страхов».
-            Через ReTreat проработали уверенность, планирование и эмоциональные триггеры.
-            Результат: стабильная привычка действовать, снижение тревожности, запуск личного проекта, который откладывался больше года`,
+          text: 'results.paragraph.sixth',
         },
       ],
     },

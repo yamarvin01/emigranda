@@ -11,10 +11,16 @@
 }
 
 .content {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
+
+  .language {
+    display: flex;
+    gap: 4px;
+  }
 }
 
 .theme-icon {

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { TuiButton } from '@taiga-ui/core';
 
 @Component({
   selector: 'app-price',
-  imports: [CommonModule, TuiButton],
+  imports: [CommonModule, TranslatePipe, TuiButton],
   templateUrl: './price.component.html',
   styleUrl: './price.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -12,19 +13,19 @@ import { TuiButton } from '@taiga-ui/core';
 export class PriceComponent {
   public items = [
     {
-      title: 'Психологическая консультация',
+      title: 'price.card.first',
       priceText: '50€/ 5 000₽',
-      btnText: 'Оставить заявку',
+      btnText: 'price.request',
     },
     {
-      title: 'Персональный урок немецкого',
+      title: 'price.card.second',
       priceText: '50€/ 5 000₽',
-      btnText: 'Оставить заявку',
+      btnText: 'price.request',
     },
     {
-      title: 'Курс немецкого языка (все уровни)',
+      title: 'price.card.third',
       priceText: '250€/ 25 000₽',
-      btnText: 'Оставить заявку',
+      btnText: 'price.request',
     },
   ];
 

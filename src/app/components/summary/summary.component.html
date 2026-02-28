@@ -18,7 +18,7 @@
       </div>
       <div class="rating__description">
         <p class="rating__description-text">
-          Данные с сайта
+          {{ 'summary.text' | translate }}
           <span class="rating__link-container"
             ><a
               class="rating__link"
@@ -32,11 +32,6 @@
         </p>
       </div>
     </div>
-    <!-- <div class="reviews">
-      <ng-container *ngFor="let review of reviews">
-        <ng-container *ngTemplateOutlet="reviewTemplate; context: { $implicit: review }"></ng-container>
-      </ng-container>
-    </div> -->
   </div>
 </section>
 
